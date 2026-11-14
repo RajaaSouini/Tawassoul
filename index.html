@@ -27,12 +27,11 @@
         </section>
     <main>
         
-        <form>
+        <form id="form">
             <h2>Ajouter des participants</h2>
             <div>
                 <label for="name">Nom complet </label>
-                <input type="text" placeholder="votre nom complet">
-                <span class="mdg-erreur"></span>
+                <input type="text" placeholder="votre nom complet" id="nom">
             </div>
             <div>
                 <label for="">Formation</label>
@@ -40,15 +39,14 @@
                     <option value="langues">Langues</option>
                     <option value="web">Web</option>
                     <option value="bureautique">Bureautique</option>
-                </select>
-                <span class="mdg-erreur"></span>
+                </select>            
             </div>
             <div>
                 <label for="email">Email</label>
-                <input type="text" placeholder="votre email @gmail.com">
-                <span class="mdg-erreur"></span>
+                <input type="text" placeholder="votre email @gmail.com" id="email">
+                <span id="msg-erreur"></span>
             </div>
-            <button>Enregistrer participant</button>
+            <button type="submit" id="button">Enregistrer participant</button>
         </form>
         <section class="liste">
             <aside>
@@ -101,6 +99,8 @@
                 <button>Supprimer</button>
             </div>
         </section>
-    </main>         
+    </main>  
+    
+    <script src="./src/app.js" type="module"></script>
 </body>
 </html>
