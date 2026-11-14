@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <h1>Tawassoul</h1>
+        </nav>
+        <div>
+            <p class="para">Géstionnaies des participants</p>
+        </div>
+    </header>
+    <section class="statistique">
+            <div>
+                <p>Total des participants</p>
+                <span id="total-participant">5</span>
+            </div>
+            <div>
+                <p>Participants sélectionnés</p>
+                <span id="participant-selectionne">3</span>
+            </div>
+        </section>
+    <main>
+        
+        <form>
+            <h2>Ajouter des participants</h2>
+            <div>
+                <label for="name">Nom complet </label>
+                <input type="text" placeholder="votre nom complet">
+                <span class="mdg-erreur"></span>
+            </div>
+            <div>
+                <label for="">Formation</label>
+                <select name="formation" id="">
+                    <option value="langues">Langues</option>
+                    <option value="web">Web</option>
+                    <option value="bureautique">Bureautique</option>
+                </select>
+                <span class="mdg-erreur"></span>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" placeholder="votre email @gmail.com">
+                <span class="mdg-erreur"></span>
+            </div>
+            <button>Enregistrer participant</button>
+        </form>
+        <section class="liste">
+            <h2>Liste des participants</h2>
+            <div>
+                <input type="checkbox">
+                <div>
+                    <p class="name">Nom du participant</p>
+                    <p>Email du participant</p>
+                </div>
+                <p class="for">Formation</p>
+                <button>Supprimer</button>
+            </div>
+            <div>
+                <input type="checkbox">
+                <div>
+                    <p  class="name">Nom du participant</p>
+                    <p>Email du participant</p>
+                </div>
+                <p class="for">Formation</p>
+                <button>Supprimer</button>
+            </div>
+            <div>
+                <input type="checkbox">
+                <div>
+                    <p  class="name">Nom du participant</p>
+                    <p>Email du participant</p>
+                </div>
+                <p class="for">Formation</p>
+                <button>Supprimer</button>
+            </div>
+            <div>
+                <input type="checkbox">
+                <div>
+                    <p  class="name">Nom du participant</p>
+                    <p>Email du participant</p>
+                </div>
+                <p class="for">Formation</p>
+                <button>Supprimer</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Filtrer</h3>
+        <div>
+            <input type="text" placeholder="entrer le nom chercher">
+        </div>
+        <div>
+            <button>Tout</button>
+            <button>Bureatique</button>
+            <button>Web</button>
+            <button>Langues</button>
+        </div>
+    </footer>
 </body>
 </html>

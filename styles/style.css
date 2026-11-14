@@ -1,0 +1,108 @@
+h1{
+    font-size: 40px;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.para{
+    font-size: 24px;
+}
+header{
+    background-color: rgb(227, 225, 222);
+    padding: 20px;
+}
+.statistique{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.statistique div{
+    border: 1px rgb(224, 202, 202) solid;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+form{
+    border: 1px rgb(224, 202, 202)  solid;
+    padding: 10px;
+    border-radius: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form div input , form div select{
+    border-radius: 10px;
+    padding: 10px;
+    border:1px rgb(224, 202, 202) solid ;
+}
+form button{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(6, 83, 14);
+    color: antiquewhite;
+    border: none;
+}
+.liste{
+    border: 1px rgb(224, 202, 202)  solid;
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.liste>div{
+    display: flex;
+    justify-content: space-around;
+    border: 1px   rgb(224, 202, 202)  solid;
+    gap: 10px;
+    align-items: center;
+}
+main{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.liste button{
+    background-color: brown;
+    border: none;
+    color: antiquewhite;
+    padding: 10px;
+    border-radius: 20px;
+    height: 50px;
+}
+.for{
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.name{
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    border: 1px   rgb(224, 202, 202)  solid;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+footer button , footer input{
+    background-color: antiquewhite;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
