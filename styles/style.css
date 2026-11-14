@@ -2,18 +2,19 @@ h1{
     font-size: 40px;
 }
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
+    color: #1F2937;
 }
 .para{
     font-size: 24px;
 }
 header{
-    background-color: rgb(227, 225, 222);
+    background-color:#059669;
     padding: 20px;
 }
 .statistique{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 10px;
 }
 .statistique div{
@@ -22,12 +23,13 @@ header{
     border-radius: 20px;
     margin-top: 10px;
     font-size: 20px;
+    text-align: center;
 }
 form{
     border: 1px rgb(224, 202, 202)  solid;
     padding: 10px;
     border-radius: 20px;
-    width: 30%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -45,7 +47,7 @@ form div input , form div select{
 form button{
     border-radius: 20px;
     padding: 10px;
-    background-color: rgb(6, 83, 14);
+    background-color: #059669 ;
     color: antiquewhite;
     border: none;
 }
@@ -53,7 +55,7 @@ form button{
     border: 1px rgb(224, 202, 202)  solid;
     padding: 10px;
     border-radius: 20px;
-    width: 50%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -68,11 +70,12 @@ form button{
 main{
     margin: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 .liste button{
-    background-color: brown;
+    background-color: #1F2937;
     border: none;
     color: antiquewhite;
     padding: 10px;
@@ -80,7 +83,7 @@ main{
     height: 50px;
 }
 .for{
-    background-color: antiquewhite;
+    background-color: #F3F4F6;
     padding: 5px;
     border-radius: 20px;
     font-weight: bold;
@@ -88,21 +91,52 @@ main{
 .name{
     font-weight: bold;
 }
-footer{
+aside{
     display: flex;
     flex-direction: column;
-    border: 1px   rgb(224, 202, 202)  solid;
+
     gap: 10px;
     flex-wrap: wrap;
-    width: 30%;
+    width: 90%;
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
 }
-footer button , footer input{
-    background-color: antiquewhite;
+aside input{
+    background-color: #F3F4F6 ;
     border: none;
     padding: 10px;
     border-radius: 20px;
 }
+.divis{
+    padding: 10px;
+}
 
+@media (min-width : 768px) {
+    .statistique{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    form{
+        width: 90%;
+    }
+    aside{
+        width: 90%;
+    }
+}
+@media (min-width : 1024px) {
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    form{
+        width: 40%;
+        
+    }
+    .liste{
+        width: 50%;
+    }
+}
+
+/* Couleurs : #059669 (vert émeraude), #F3F4F6 (gris clair), #1F2937 (texte sombre) */
