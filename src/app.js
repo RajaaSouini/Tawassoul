@@ -4,6 +4,7 @@ import { ajouterElement , participants } from "./ajouter.js";
 import { supprimer } from "./supprimer.js";
 import { supprimerCocher } from "./supprimer.js";
 import { statistique } from "./statistique.js";
+import { charger, sauvegarder } from "./storage.js";
 
 const form = document.getElementById('form');
 const email = document.getElementById('email');
@@ -41,6 +42,7 @@ form.addEventListener('submit' , (e)=>{
 
     participants.push(newPartcipant);
     ajouterElement(newPartcipant) ; 
+    sauvegarder();
     statistique();
 
 
@@ -52,6 +54,7 @@ list.addEventListener('click' , function(e){
 })
 
 supprimerTout.addEventListener('click' , supprimerCocher);
+charger();
 statistique();
 
 

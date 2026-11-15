@@ -1,5 +1,6 @@
 import { participants } from "./ajouter.js";
 import { statistique } from "./statistique.js";
+import { sauvegarder } from "./storage.js";
 export function supprimer(bloc){
     const id = Number(bloc.dataset.id) ;
 
@@ -8,6 +9,7 @@ export function supprimer(bloc){
     if(index !== -1) participants.splice(index , 1);
 
     bloc.remove();
+    sauvegarder();
     statistique();
 
 }
@@ -23,5 +25,6 @@ export function supprimerCocher(){
         if(index !== -1) participants.splice(index , 1);
         bloc.remove();
     })
+    sauvegarder();
     statistique();
 }
