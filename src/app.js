@@ -5,6 +5,7 @@ import { supprimer } from "./supprimer.js";
 import { supprimerCocher } from "./supprimer.js";
 import { statistique } from "./statistique.js";
 import { charger, sauvegarder } from "./storage.js";
+import { filter } from "./filter.js";
 
 const form = document.getElementById('form');
 const email = document.getElementById('email');
@@ -43,7 +44,9 @@ form.addEventListener('submit' , (e)=>{
     participants.push(newPartcipant);
     ajouterElement(newPartcipant) ; 
     sauvegarder();
+    filter();
     statistique();
+    form.reset(); 
 
 
 })
@@ -58,7 +61,12 @@ charger();
 statistique();
 
 
-list.addEventListener('change', (e) => {
-    console.log('change', e.target);
+list.addEventListener('change', (e) => {        
     if (e.target.type === 'checkbox') statistique();
 });
+
+
+
+
+
+
