@@ -3,6 +3,7 @@ import { validerNom } from "./validation.js";
 import { ajouterElement , participants } from "./ajouter.js";
 import { supprimer } from "./supprimer.js";
 import { supprimerCocher } from "./supprimer.js";
+import { statistique } from "./statistique.js";
 
 const form = document.getElementById('form');
 const email = document.getElementById('email');
@@ -40,7 +41,7 @@ form.addEventListener('submit' , (e)=>{
 
     participants.push(newPartcipant);
     ajouterElement(newPartcipant) ; 
-
+    statistique();
 
 
 })
@@ -51,3 +52,10 @@ list.addEventListener('click' , function(e){
 })
 
 supprimerTout.addEventListener('click' , supprimerCocher);
+statistique();
+
+
+list.addEventListener('change', (e) => {
+    console.log('change', e.target);
+    if (e.target.type === 'checkbox') statistique();
+});
