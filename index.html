@@ -35,8 +35,8 @@
                 <span id="msg-erreur-nom"></span>
             </div>
             <div>
-                <label for="">Formation</label>
-                <select name="formation" id="">
+                <label for="formation">Formation</label>
+                <select name="formation" id="formation">
                     <option value="langues">Langues</option>
                     <option value="web">Web</option>
                     <option value="bureautique">Bureautique</option>
@@ -48,9 +48,11 @@
                 <span id="msg-erreur"></span>
             </div>
             <button type="submit" id="button">Enregistrer participant</button>
+
         </form>
-        <section class="liste">
-            <aside>
+
+        <section class="liste" id="liste"> 
+                       <aside>
             <h3>Filtrer</h3>
             <div>
                 <input type="text" placeholder="entrer le nom chercher">
@@ -62,8 +64,9 @@
                 <button>Langues</button>
             </div>
         </aside>
-            <h2>Liste des participants</h2>
-            <div class="divis">
+            <h2>Liste des participants</h2>   
+            <button type="button" id="supprimer-selection">Supprimer sélection</button>   
+            <!-- <div class="divis">
                 <input type="checkbox">
                 <div>
                     <p class="name">Nom du participant</p>
@@ -98,7 +101,7 @@
                 </div>
                 <p class="for">Formation</p>
                 <button>Supprimer</button>
-            </div>
+            </div> -->
         </section>
     </main>  
     
